@@ -1,0 +1,87 @@
+/* public/assets/css/player.css */
+
+/* ---------- ACCROCHE ---------- */
+.name-player {
+  font: var(--menlo-title);
+  background: var(--bgdark);
+  color: var(--white);
+
+  margin: 0rem 0rem 1.5rem 0rem; /* marge haut/bas */
+  text-align: center;
+}
+
+/* ---------- FORM (input + submit) ---------- */
+.form-player {
+  display: flex; /* Transforme "l'ensemble" formulaire en flexbox */
+  flex-direction: row; /* row (aligner) ou column (empiler verticalement) */
+
+  width: 450px; /* Largeur de la boite formulaire */
+  margin: 0 auto; /* Centrer l'ensemble */
+
+  gap: var(--space-m); /* Espace entre le formulaire et le bouton */
+
+  min-width: 18rem; /* Limiter la largeur à ~288 px (Mobile confort) */
+}
+
+/* ---------- INPUT (placeholder = Écris ton nom...) ---------- */
+.input-player {
+  width: 70%; /* taille de l'input dans le formulaire) */
+
+  background: var(--bglight); /* Fond blanc (origine fond grisé) */
+  color: var(--noir);
+  border: 1px solid var(--grey); /* Bordure */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+
+  padding: var(--space-s); /* Espace à l’intérieur de l'input */
+
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
+.input-player:hover {
+  background: var(--black);
+  color: var(--yellow);
+}
+
+.input-player::placeholder {
+  color: var(--blue);
+  font-style: italic;
+}
+
+.input-player:hover::placeholder {
+  color: var(--yellow);
+}
+
+/* Quand le champ a du texte */
+.input-player:not(:placeholder-shown) {
+  background: var(--black);
+  color: var(--yellow);
+}
+
+/* ---------- SUBMIT (bouton = Commencer) ---------- */
+/* Réutilisation de la classe .btn de global.css */
+.btn {
+  width: 30%; /* % d'oocupation du bouton */
+}
+
+/* ---------- MESSAGE D'ERREUR ---------- */
+
+.error-message {
+  text-align: left;
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: opacity 0.1s ease;
+}
+
+/* Message pour champ vide */
+.error-message.empty {
+  color: red;
+}
+
+/* Message pour longueur incorrecte */
+.error-message.length {
+  color: red;
+}
+
+/* ---------- RESPONSIVE MOBILE (≥ 320 px) ---------- */

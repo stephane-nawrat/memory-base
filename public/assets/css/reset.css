@@ -1,0 +1,49 @@
+/* public/assets/css/reset.css */
+/* Mise à zéro des styles par défaut (Meyer modernisé) */
+
+/* Je retire toutes les marges et paddings par défaut */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Je normalise le corps du document */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* J’enlève les puces et les marges sur les listes */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Je retire les bordures et les styles par défaut des boutons, inputs, etc. */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+/* Je mets les images et SVG responsifs par défaut */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Je retire les décorations de lien par défaut */
+a {
+  text-decoration: none;
+  color: inherit;
+}

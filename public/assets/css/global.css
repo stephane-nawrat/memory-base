@@ -1,0 +1,44 @@
+/* public/assets/css/global.css */
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bglight);
+  color: var(--black);
+}
+
+/* ---------- PAGE GÉNÉRIQUE ---------- */
+.page {
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* ---------- MAIN GÉNÉRIQUE ---------- */
+main {
+  background-color: var(--bglight);
+  max-width: var(--max-width);
+  width: 100%;
+  text-align: center;
+
+  margin-top: 3rem;
+}
+
+/* ---------- .btn (BOUTON GÉNÉRIQUE) ---------- */
+.btn {
+  display: inline-block;
+  padding: var(--space-s) var(--space-m);
+  font-weight: 700;
+  background: var(--black);
+  color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  transition: background 0.1s;
+}
+
+.btn:hover {
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--grey);
+}

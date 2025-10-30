@@ -1,0 +1,39 @@
+/* public/assets/css/variables.css */
+
+:root {
+  /* ---------- WIDTH ---------- */
+  --max-width: 700px;
+
+  /* ---------- FONTS ---------- */
+  --font-body: "Menlo", monospace;
+  --font-test: "Roboto", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+
+  /* ACCROCHE (titre) */
+  --menlo-title: 700 1.8rem/1.6 "Menlo", monospace;
+
+  /* ---------- COLORS ---------- */
+  /* BACKGROUND (DARk & LIGHT) */
+  --bgdark: #222;
+  --bglight: #fff;
+  --antwhite: rgb(250, 235, 215);
+
+  /* PALETTE */
+  --black: #222;
+  --white: #fff;
+  --grey: #777;
+  --yellow: yellow;
+  --blue: blue;
+  --green: green;
+  --red: red;
+
+  /* ---------- ESPACEMENT ---------- */
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-ml: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+
+  /* ---------- DESIGN DETAILS ---------- */
+  --radius: 0.25rem;
+}
