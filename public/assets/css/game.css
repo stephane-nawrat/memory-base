@@ -1,0 +1,38 @@
+/* public/assets/css/game.css */
+/* Plateau minimaliste : 3 à 12 paires, retournement, victoire */
+
+.page.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: var(--space-m);
+}
+
+.main-game {
+  width: 100%;
+  max-width: var(--max-width);
+  text-align: center;
+}
+
+.game-title {
+  font: var(--menlo-title);
+  background: var(--bgdark);
+  color: var(--white);
+  margin-bottom: var(--space-s);
+}
+
+.game-subtitle {
+  color: var(--grey);
+  margin-bottom: var(--space-l);
+}
+
+.game-board {
+  width: 100%;
+  max-width: 28rem; /* ~448 px (tablette confort) */
+  margin: 0 auto;
+}
+
+.game-score {
+  margin-top: var(--space-xl);
+}
