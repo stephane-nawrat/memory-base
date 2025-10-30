@@ -1,0 +1,36 @@
+/* public/assets/css/end.css */
+/* Page fin : score, temps, coups, classement */
+
+.page.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: var(--space-m);
+}
+
+.main-end {
+  width: 100%;
+  max-width: var(--max-width);
+  text-align: center;
+}
+
+.end-title {
+  font: var(--menlo-title);
+  background: var(--bgdark);
+  color: var(--white);
+  margin-bottom: var(--space-s);
+}
+
+.end-subtitle {
+  color: var(--grey);
+  margin-bottom: var(--space-l);
+}
+
+.end-score {
+  margin-bottom: var(--space-xl);
+}
+
+.end-leaderboard {
+  margin-top: var(--space-xl);
+}
