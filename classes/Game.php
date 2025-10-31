@@ -17,7 +17,10 @@ class Game
         if ($pairCount < 3 || $pairCount > 12) {
             throw new InvalidArgumentException('3 à 12 paires uniquement.');
         }
-        // on remplira plus tard
+
+        // Je remplis le plateau (on le fera plus tard)
+        // Pour l’instant, on laisse vide
+        $this->cards = [];
     }
 
     /**
@@ -36,5 +39,16 @@ class Game
     public function isWon(): bool
     {
         return $this->pairsFound === count($this->cards) / 2;
+    }
+
+    /**
+     * Je retourne une carte (on le fera plus tard)
+     * @param int $id ID de la carte
+     * @return string nom de la carte
+     */
+    public function revealCard(int $id): string
+    {
+        // on remplira plus tard
+        return '';
     }
 }
