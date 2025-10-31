@@ -47,4 +47,16 @@ class Score
         }
         return $this->endTime - $this->startTime;
     }
+
+    /**
+     * Je stocke le score en session
+     * @param int $playerId ID du joueur
+     * @param int $pairCount nombre de paires
+     */
+    public function storeInSession(int $playerId, int $pairCount): void
+    {
+        $_SESSION['score_moves'] = $this->moves;
+        $_SESSION['score_duration'] = $this->getDuration();
+        $_SESSION['score_pair_count'] = $pairCount;
+    }
 }

@@ -7,10 +7,10 @@ require_once __DIR__ . '/../classes/Score.php';
 
 session_start();
 
-// On récupère le score depuis la session (on le stockera plus tard)
-$score = $_SESSION['score'] ?? null; // on le stockera plus tard
-
-// On récupère le nom du joueur (on le stockera plus tard)
+// On récupère le score depuis la session
+$scoreMoves = $_SESSION['score_moves'] ?? 0;
+$scoreDuration = $_SESSION['score_duration'] ?? 0.0;
+$scorePairCount = $_SESSION['score_pair_count'] ?? 0;
 $playerName = $_SESSION['player_name'] ?? 'Joueur';
 
 ?>
@@ -34,12 +34,14 @@ $playerName = $_SESSION['player_name'] ?? 'Joueur';
 
         <p class="end-subtitle">Bravo <?= htmlspecialchars($playerName) ?> !</p>
 
-        <!-- Score vide pour l’instant -->
+        <!-- Score -->
         <section class="end-score">
-            <!-- on remplira plus tard -->
+            <p class="end-score-moves">Coups : <?= htmlspecialchars($scoreMoves) ?></p>
+            <p class="end-score-duration">Temps : <?= htmlspecialchars(number_format($scoreDuration, 3)) ?> s</p>
+            <p class="end-score-pairs">Paires : <?= htmlspecialchars($scorePairCount) ?></p>
         </section>
 
-        <!-- Classement vide pour l’instant -->
+        <!-- Classement (on le fera plus tard) -->
         <section class="end-leaderboard">
             <!-- on remplira plus tard -->
         </section>
